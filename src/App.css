@@ -1,38 +1,56 @@
 .App {
   text-align: center;
+  
+}
+body {
+  margin: 0;
+}
+.App {
+  display: grid;
+  margin-top: 100px;
+  border: 1px solid black;
+  width: 400px;
+  margin-left: 35%;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.equalSign {
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 4;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.grid-item {
+  border: none;
+  
+}
+.grid-container {
+  display: grid;
+  grid-gap: 5px 5px;
+}
+.mathSigns {
+  background-color: silver;
+  height:50px
+}
+.numbers{
+  height:50px
+}
+.numbers:hover {
+  background-color: rgb(15, 157, 15);
+  color: white;
+}
+.equalSign {
+  background-color: rgb(26, 84, 200);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result{
+  border: solid 1px rgba(199, 198, 198, 0.646);
+  width:390px;
+  height:50px;
+  margin: 5px 5px;
+  text-align: right;
 }
